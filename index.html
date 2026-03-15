@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced Event Countdown</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Advanced Event Countdown</h1>
+
+    <!-- Event input section -->
+    <div class="event-input">
+      <input type="text" id="event-name-input" placeholder="Event Name" required>
+      <input type="datetime-local" id="event-date-input" required>
+      <button id="add-event-btn">Add / Update Event</button>
+    </div>
+
+    <!-- Event selection -->
+    <div class="event-select">
+      <label for="event-list">Select Event:</label>
+      <select id="event-list">
+        <option value="" disabled selected>-- Select an Event --</option>
+      </select>
+    </div>
+
+    <!-- Countdown display -->
+    <div class="countdown-container hidden">
+      <div class="event-info">
+        <h2 id="event-name-display"></h2>
+      </div>
+
+      <div class="countdown">
+        <div class="time-box">
+          <div class="flip" id="days"><span class="top">00</span><span class="bottom">00</span></div>
+          <p>Days</p>
+        </div>
+        <div class="time-box">
+          <div class="flip" id="hours"><span class="top">00</span><span class="bottom">00</span></div>
+          <p>Hours</p>
+        </div>
+        <div class="time-box">
+          <div class="flip" id="minutes"><span class="top">00</span><span class="bottom">00</span></div>
+          <p>Minutes</p>
+        </div>
+        <div class="time-box">
+          <div class="flip" id="seconds"><span class="top">00</span><span class="bottom">00</span></div>
+          <p>Seconds</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
